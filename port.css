@@ -1,0 +1,705 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: #1f242d;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10%;
+}
+.logo{
+
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    animation: slideLeft 1s ease forwards;
+    opacity: 0;
+    font-weight: 27px;
+}
+.navbar a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 16px;
+    font-weight: 600;
+    transition: 0.3s all;
+    animation: navMenu 0.4s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+    opacity: 0;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #0ef;
+}
+
+/* -------------Hero Section--------------------- */
+.hero-container{
+    display: flex;
+    padding: 25px 10%;
+    justify-content: center;
+    align-items: center;
+}
+.info-side h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+.info-side h1 {
+    font-size: 75px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    animation: slideRight 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+.info-side h3 span {
+    color: #0ef;
+}
+
+.part-1 {
+    animation: part1 1s ease forwards;
+    
+    opacity: 0;
+}
+.part-2 {
+    animation: part2 1s ease forwards;
+    
+    opacity: 0;
+}
+p{
+    line-height: 27px;
+    margin: 20px 0px 40px 0px;
+    animation: slideLeftP 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
+}
+.hero-img img {
+    width: 500px;
+    height: 450px;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+
+}
+.i{
+    position: relative;
+    border: 2px solid #0ef;
+    padding: 10px;
+    border-radius: 50%;
+    color: #0ef;
+    margin: 0px 8px;
+    transition: 0.3s;
+    animation: socialIcons 1s ease forwards;
+    animation-delay: calc(0.3s * var(--i));
+    opacity: 0;
+}
+.i:hover {
+    box-shadow: 0 0 20px #0ef;
+}
+button {
+    background-color: #0ef;
+    margin-top: 50px;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+    box-shadow: 0 0 15px #0ef;
+    animation: slideUp 1s ease forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+button:hover {
+    box-shadow: none;
+}
+/* ================= Animation ===================== */
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes navMenu {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes part1 {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes part2 {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideLeftP {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes socialIcons {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(1);
+        opacity: 1;
+    }
+    
+}
+
+/*---------------- About Me -------------------------*/
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 25px 10%;
+    margin: 20px 0px;
+    background-color: #323946;
+    height: 100vh;
+
+}
+
+.about-img img {
+    width: 40vw;
+    
+}
+
+.heading {
+    text-align: left;
+    font-size: 60px;
+}
+
+.about-content h3 {
+    font-size: 1.6rem;
+}
+
+.about-content p {
+    line-height: 27px;
+    margin: 2rem 0 1rem;
+}
+
+/* -----------Services----------------------- */
+.services {
+    padding: 25px 10%;
+    height: 100vh;
+    margin-top: 70px;
+
+}
+.services .heading span{
+    color: #0ef;
+
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.services h2 {
+    text-align: center;
+}
+
+.service-container .service-box {
+    flex: 1 1 1rem;
+    margin-top: 30px;
+    background-color: #323946;
+    padding: 2rem 1rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 0.5s ease;
+    border: 0.2rem solid #1f242d;
+}
+
+.service-box i {
+    font-size: 3rem;
+    color: #0ef;
+}
+.service-box h3 {
+    font-size: 1.2rem;
+}
+.service-box p {
+    margin: 1rem 0 3rem;
+}
+
+.service-container .service-box:hover {
+    border-color: #0ef;
+    transform: scale(1);
+}
+/* -----Portfolio---------- */
+.portfolio .heading span{
+    color: #0ef;
+
+}
+.portfolio {
+    background-color: #323946;
+    padding: 25px 10%;
+    margin: 20px 0px;
+    height: 100vh;
+}
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    
+}
+.portfolio-container .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #1f242d;
+    overflow: hidden;
+    display: flex;
+}
+.portfolio-box img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.343),rgba(0,238,255,0.732));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+    transition: 0.5s ease;
+    transform: translateY(100%);
+}
+.portfolio-layer h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.portfolio-layer p{
+    font-size: 0.9rem;
+    margin: 0.2rem 0 1rem;
+}
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 50%;
+
+}
+.link-container {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.link-container .uil-link {
+    margin-right: 8px; /* Add margin between icon and text */
+}
+
+.portfolio-link {
+    text-decoration: none;
+    color: #12f7ff; /* Set link color */
+    background-color: #333333; /* Set link background color */
+    padding: 8px 16px; /* Adjust padding as needed */
+    border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+}
+
+.portfolio-link:hover {
+    background-color: #555555; /* Change background color on hover */
+}
+
+.portfolio-layer a i {
+    font-size: 1rem;
+    color: #1f242d;
+}
+
+.portfolio-layer a i {
+    font-size: 1rem;
+    color: #1f242d;
+}
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+
+}
+#portfolioheading {
+    text-align: center;
+    margin: 70px 0px 30px 0;
+}
+
+/* skills section starts */
+.skills {
+    background: #292e33;
+}
+.main-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main-text span{
+    font-size: xx-large;
+    /* color: #910A67; */
+}
+.main-text h2{
+    font-size: xx-large;
+    color: #0ef;
+    font-weight: bolder;
+}
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap:30px;
+    grid-column-gap:50px;
+}
+.skill-bar {
+    margin-bottom: 2.3rem;
+}
+.skill-main h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+
+}
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin-left: 10px;
+
+}
+.skill-left .skill-bar .bar{
+    width: 80%;
+    height: 10px;
+    background-color: #250821;
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 6rem;
+}
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background:#12f7ff;
+    border-radius: 25px;
+    box-shadow: 0 0 .5rem #12f7ff;
+}
+.skill-bar .bar .html{
+    width: 72%;
+    animation: html 2s;
+}
+.skill-bar .bar .css{
+    width: 62%;
+    animation: css 3s;
+
+}
+.skill-bar .bar .javascript{
+    width: 80%;
+    animation: javascript 4s;
+
+}
+.skill-bar .bar .reactjs{
+    width: 60%;
+    animation: reactjs 5s;
+
+}
+.skill-bar .bar .corejava{
+    width: 85%;
+    animation: corejava 6s;
+
+}
+.skill-bar .bar .mysql{
+    width: 90%;
+    animation: mysql 7s;
+
+}
+
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 72%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 62%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes reactjs{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes corejava{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes mysql{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+/* Skill  right */
+
+.professional{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box{
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+}
+.box .text{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+.box .text big{
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.box .text small{
+    display: block;
+    font-weight: 600;
+}
+.circle{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.circle .points{
+    width: 2px;
+    height: 10px;
+    background-color: #250821;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+    /* animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);  */
+}
+@keyframes glow{
+    0%{
+        background:#250821 ;
+        box-shadow: none;
+    }
+    100%{
+        background: #12f7ff;
+        box-shadow: 0 0 .5rem #12f7ff;
+    }
+}
+
+.points.marked{
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
+/* --------contact---------- */
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-left p{
+    margin-top:30px;
+}
+.contact-left h1{
+    font-size: xx-large;
+    color: #0ef;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.contact-left p i{
+    color:#ff004f;
+    margin-right: 15px;
+    font-size:25px ;
+}
+.social-icon{
+    margin-top: 30px;
+
+}
+
+.social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+
+.social-icon a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background-color: #ff004f;
+}
+
+
+
+
+.contact-right form{
+width: 50%;
+
+}
+form input, form textarea{
+    width: 50%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    background: #262626;
+    /* margin: 15px; */
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background: #262626;
+    font-weight:300;
+    margin-top:20px ;
+    color: #ff004f;
+}
+.copyright i{
+    color:#ff004f ;
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./port.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <header class="header">
+        
+        <a href="#" class="logo"><img src="./Images/RUPALI-SAGARE-2-10-2024.png" alt="" height="80px" width="100%"></a>
+        <!-- <a href="#" class="logo">RS</a> -->
+        <nav class="navbar">
+            <a href="#" class="active" style="--i:1">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#services" style="--i:3">Services</a>
+
+            <a href="#" style="--i:4">Skills</a>
+            <a href="#portfolio" style="--i:5">Projects</a>
+            <a href="#resume" style="--i:6">Resume</a>
+
+            <a href="#" style="--i:7">Contact</a>
+        </nav>
+
+    </header>
+    <!-- ===========>> Hero Section <<================ -->
+    <div class="hero-container">
+        <div class="info-side">
+            <h3 class="part-1">Hello, It's Me</h3>
+            <h1>Rupali Sagare</h1>
+            <h3 class="part-2">
+                And I'm a <span id="changing-text">Fullstack Developer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia, iusto perferendi corporis,   
+                veniam sint debitis perspiciatis ullam eaque dolorum minus. 
+            </p>
+            <!--  Social Media icons -->
+            <a href="#"><i  class="i uil uil-facebook-f" style="--i: 7"></i></a>
+            <a href="#"><i class="i uil uil-twitter" style="--i: 8"></i></a>
+            <a href="#"><i class="i uil uil-instagram" style="--i: 9"></i></a>
+            <a href="#"><i class="i uil uil-linkedin-alt" style="--i: 10"></i></a>
+            <br>
+            <br>
+            <button class="btn">Download <a href="./Images/RUPALI-SAGARE.pdf" target="_blank"  download class="btn btn2"></a> Resume</button>
+        </div>
+        <div class="hero-img">
+            <img src="./Images/image2.jpg" alt="My Pic">
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./Images/image3.jpg" alt="my pic" height="550px" width="300px">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Front-end Developer</h3>
+            <p>I am a passionate and dedicated Front-end Developer, driven by the desire to create meaningful and impactful projects. With a background in MCS and BCS in Computer Science, I bring a unique blend of skills and experiences to every endeavor.
+
+                My journey in Computer Science has been one of continuous learning and growth. I thrive in dynamic environments where I can leverage my creativity and problem-solving abilities to overcome challenges and achieve goals. I approach each task with enthusiasm and a commitment to excellence.
+                
+                Outside of work, you can find me exploring the latest trends in web development, experimenting with new technologies, and engaging in outdoor activities like hiking and photography. These experiences not only fuel my creativity but also provide valuable insights that I bring to my professional life.
+                
+                I am passionate about Front-end Development, and I am always eager to collaborate with like-minded individuals or organizations to make a positive impact.
+                
+                Thank you for visiting my portfolio, and I look forward to connecting with you!
+            </p>
+            <button>Read More</button>
+        </div>
+    </section>
+    <!-- -----------Our Services---------- -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="service-container">
+            <div class="service-box">
+                <!-- Icon -->
+                <i class="uil uil-brackets-curly"></i>
+                <h3>Web Development</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, vero dignissimos reiciendis 
+                    soluta voluptate distinctio!
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="service-box">
+                <!-- Icon -->
+                <i class="uil uil-palette"></i>
+                <h3>UI UX Designer</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, vero dignissimos reiciendis 
+                    soluta voluptate distinctio!
+                </p>
+                <button>Read More</button>
+            </div><div class="service-box">
+                <!-- Icon -->
+                <i class="uil uil-arrow"></i>
+                <h3>Front-end Developer</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, vero dignissimos reiciendis 
+                    soluta voluptate distinctio!
+                </p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============Portfolio Section ================ -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading" id="portfolioheading">My <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./Images/EcommerceWebsite.png" alt="E-Commerce Website">
+                <div class="portfolio-layer">
+                    <h4>E-Commerce Website</h4>
+                    <p>Showcase of a full-stack web application for online shopping. Features product catalog, responsive design, shopping cart management.</p>
+                    <!-- Link to the deployed E-Commerce Website -->
+                    
+                    <a href="https://roopsecommerceproject.netlify.app/"><i class="uil uil-link"></i></a>
+                    <!-- <i class="uil uil-link"><a href="https://roopsecommerceproject.netlify.app/"></a></i>  -->
+                </div>
+            </div>
+            
+            <!-- we will copy this box code 6 times -->
+            <div class="portfolio-box">
+                <img src="./Images/CrudApp.png" alt="myProject">
+                <div class="portfolio-layer">
+                    <h4>Crud App</h4>
+                    <p> A CRUD (Create, Read, Update, Delete) application built using modern web technologies.
+            This application allows users to perform basic operations on a database, including adding,
+            editing, viewing, and deleting records.
+                    </p>
+                    <!-- we'll put links in form of anchor tags -->
+                    <a href="https://roopscrudapp.netlify.app/"><i class="uil uil-link"></i></a>
+                </div>
+            </div><div class="portfolio-box">
+                <img src="./Images/Pixabay.png" alt="myProject">
+                <div class="portfolio-layer">
+                    <h4>Pixabay Clone</h4>
+                    <p>A Pixabay clone project that replicates the functionality of the popular stock image website.
+                        Users can search for and browse through a vast collection of high-quality images, as well as
+                        download or share them.</p>
+                    <!-- we'll put links in form of anchor tags -->
+                    <a href="https://roopspixabaycloneproject.netlify.app/"><i class="uil uil-link"></i></a>
+                </div>
+            </div><div class="portfolio-box">
+                <img src="./Images/WheatherApp.png" alt="myProject">
+                <div class="portfolio-layer">
+                    <h4>WheatherApp</h4>
+                    <p>A weather application that provides real-time weather forecasts based on user location
+                        or user-inputted locations. Users can view current weather conditions, hourly forecasts,
+                        and weekly forecasts.
+                    </p>
+                    <!-- we'll put links in form of anchor tags -->
+                    <a href="https://roopswheatherappproject.netlify.app/"><i class="uil uil-link"></i></a>
+                </div>
+            </div><div class="portfolio-box">
+                <img src="./Images/BirthdayReminder.png" alt="myProject">
+                <div class="portfolio-layer">
+                    <h4>BirthdayReminder</h4>
+                    <p> A simple web application that helps users keep track of upcoming birthdays of their friends,
+                        family, and colleagues. Users can add birthdays, set reminders, and receive notifications
+                        when a birthday is approaching. The app provides a convenient way to stay organized and
+                        remember important dates. </p>
+                    <!-- we'll put links in form of anchor tags -->
+                    <a href="https://roopsbirthdayreminderproject.netlify.app/"><i class="uil uil-link"></i></a>
+                </div>
+            </div><div class="portfolio-box">
+                <img src="./Images/Piano.png" alt="myProject">
+                <div class="portfolio-layer">
+                    <h4>Piano</h4>
+                    <p> A virtual piano web application that allows users to play different musical notes and
+            melodies using their computer keyboard or mouse. Users can experiment with various
+            combinations of keys to create beautiful tunes and melodies.
+                    </p>
+                    <!-- we'll put links in form of anchor tags -->
+                    <a href="https://mypianoproject.netlify.app/"><i class="uil uil-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="main-text">
+            <span>Technical and Professional</span>
+            <h2>My Skills</h2>
+
+        </div>
+        <div class="skill-main">
+            <div class="skill-left">
+                <h3>Technical Skills </h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Html</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;72%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;62%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+
+                    </div>
+                </div><div class="skill-bar">
+                    <div class="info">
+                        <p>JavaScript</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+
+                    </div>
+                </div><div class="skill-bar">
+                    <div class="info">
+                        <p>React Js</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="reactjs"></span>
+
+                    </div>
+                </div><div class="skill-bar">
+                    <div class="info">
+                        <p>Core Java</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;85%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="corejava"></span>
+
+                    </div>
+                </div><div class="skill-bar">
+                    <div class="info">
+                        <p>MySql</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="mysql"></span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="skill-right">
+                <h3>Professional Skills</h3>
+                <div class="professional">
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Team Work</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="80"></div>
+                        
+                        <div class="text">
+                            <big>80%</big>
+                            <small>Creativity</small>
+                        </div>
+                    </div><div class="box">
+                        <div class="circle" data-dots="80" data-percent="55"></div>
+                        
+                        <div class="text">
+                            <big>55%</big>
+                            <small>Project Management</small>
+                        </div>
+                    </div><div class="box">
+                        <div class="circle" data-dots="80" data-percent="70"></div>
+                        
+                        <div class="text">
+                            <big>70%</big>
+                            <small>Communication</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+
+                </div>
+                
+            </div>
+            <br>
+            <br>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name"  placeholder="Your Name" required>
+                    <br>
+                    <br>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <br>
+                    <br>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <br>
+                    <br>
+                    <button type="submit btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Rupali. Made by Myself ❤️<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+      
+     
+
+    
+    
+
+    <!-- Javascript Linking -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./Script.js"></script>
+    
+</body>
+</html>
